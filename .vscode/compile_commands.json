@@ -1,0 +1,11 @@
+[
+{
+  "directory": "/home/roberto/myWorks/personal/dtc-http2",
+  "arguments": ["/opt/clang/bin/clang", "-c", "-Qunused-arguments", "-m64", "-O0", "-I/home/roberto/myWorks/personal/dtc-http2", "-Ibuild/.gens/dtchttp2/linux/x86_64/debug/rules/bpf", "-I/opt/clang/include", "-DMYCLANG", "-I", "/usr/include/libzmf-0.0", "-I", "/usr/include/librevenge-0.0", "-target", "bpf", "-mllvm", "-bpf-stack-size=1024", "-g", "-O2", "-D__TARGET_ARCH_x86", "-o", "build/.gens/dtchttp2/linux/x86_64/debug/rules/bpf/dtchttp2.bpf.o", "dtchttp2.bpf.c"],
+  "file": "dtchttp2.bpf.c"
+},
+{
+  "directory": "/home/roberto/myWorks/personal/dtc-http2",
+  "arguments": ["/opt/clang/bin/clang", "-c", "-Qunused-arguments", "-m64", "-O0", "-std=c++20", "-I/home/roberto/myWorks/personal/dtc-http2", "-Ibuild/.gens/dtchttp2/linux/x86_64/debug/rules/bpf", "-I/opt/clang/include", "-DMYCLANG", "-I", "/usr/include/libzmf-0.0", "-I", "/usr/include/librevenge-0.0", "-o", "build/.objs/dtchttp2/linux/x86_64/debug/dtchttp2.cpp.o", "dtchttp2.cpp"],
+  "file": "dtchttp2.cpp"
+}]

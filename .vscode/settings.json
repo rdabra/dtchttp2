@@ -1,0 +1,17 @@
+{
+   "cSpell.language": "en,pt-BR",
+   "cSpell.enableFiletypes": [
+      "cmake"
+   ],
+   "editor.fontSize": 13.5,
+   "editor.fontFamily": "Monoid Nerd Font Mono Retina, JetBrains Mono NL Light, Dejavu Sans Mono, monospace",
+   "terminal.integrated.fontSize": 15,
+   "terminal.integrated.fontFamily": "Iosevka Light",
+   "[Log]": {
+      "editor.fontSize": 15,
+      "editor.fontFamily": "Iosevka Light",
+   },
+   "clangd.arguments": [
+      "--compile-commands-dir=/home/roberto/myWorks/personal/dtc-http2/.vscode"
+   ]
+}

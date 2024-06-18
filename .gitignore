@@ -1,0 +1,8 @@
+*.o
+*.skel.h
+vmlinux*
+*.crt
+*.key
+.xmake
+build
+.vscode/.cache

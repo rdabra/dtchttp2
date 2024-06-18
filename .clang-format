@@ -1,0 +1,6 @@
+{BasedOnStyle: LLVM, 
+IndentAccessModifiers: true, 
+IndentWidth: 3, 
+ColumnLimit: 100,
+AllowShortFunctionsOnASingleLine: InlineOnly,
+AlwaysBreakTemplateDeclarations: Yes}

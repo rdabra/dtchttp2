@@ -1,0 +1,88 @@
+{
+   // See https://go.microsoft.com/fwlink/?LinkId=733558
+   // for the documentation about the tasks.json format
+   "version": "2.0.0",
+   "tasks": [
+      {
+         "label": "xmake run",
+         "type": "shell",
+         "command": "xmake run -P .",
+         "options": {
+            "cwd": "${workspaceFolder}"
+         },
+         "presentation": {
+            "clear": true
+         },
+         "group": {
+            "kind": "build",
+            "isDefault": false
+         }
+      },
+      {
+         "label": "xmake: build release",
+         "type": "shell",
+         "command": "xmake f -p linux -a x86_64 -m release -P . && xmake -j8 -P .",
+         "options": {
+            "cwd": "${workspaceFolder}"
+         },
+         "presentation": {
+            "clear": true
+         },
+         "group": {
+            "kind": "build",
+            "isDefault": false
+         }
+      },
+      {
+         "label": "xmake: build debug",
+         "type": "shell",
+         "command": "xmake f -p linux -a x86_64 -m debug -v -P . && xmake -j8 -v -P .",
+         "options": {
+            "cwd": "${workspaceFolder}"
+         },
+         "presentation": {
+            "clear": true
+         },
+         "group": {
+            "kind": "build",
+            "isDefault": false
+         }
+      },
+      {
+         "label": "xmake: clean + build debug",
+         "type": "shell",
+         "command": "rm -rf build && rm -rf .xmake && xmake f -p linux -a x86_64 -m debug -v -P . && xmake -j8 -v -P .",
+         "options": {
+            "cwd": "${workspaceFolder}"
+         },
+         "presentation": {
+            "clear": true
+         },
+         "group": {
+            "kind": "build",
+            "isDefault": false
+         },
+      },
+      {
+         "label": "eraseDoxygen",
+         "type": "shell",
+         "command": "del /q *.*",
+         "options": {
+            "cwd": "${workspaceFolder}/out/documentation/"
+         },
+         "problemMatcher": []
+      },
+      {
+         "label": "runDoxygen",
+         "type": "shell",
+         "command": "doxygen Doxyfile",
+         "options": {
+            "cwd": "${workspaceFolder}"
+         },
+         "dependsOn": [
+            "eraseDoxygen"
+         ],
+         "problemMatcher": []
+      }
+   ]
+}
